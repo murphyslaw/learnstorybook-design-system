@@ -1,3 +1,15 @@
+# v0.1.5 (Sun May 08 2022)
+
+#### ⚠️ Pushed to `main`
+
+- Bugfix: Provide NPM_TOKEN to replace it in the environment for Post Node Setup ([@murphyslaw](https://github.com/murphyslaw))
+
+#### Authors: 1
+
+- Falk Köppe ([@murphyslaw](https://github.com/murphyslaw))
+
+---
+
 # v0.1.1 (Sun May 08 2022)
 
 #### ⚠️ Pushed to `main`
