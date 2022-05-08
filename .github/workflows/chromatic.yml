@@ -15,6 +15,7 @@ jobs:
         with:
           fetch-depth: 0
       - run: yarn install --frozen-lockfile
+      - run: yarn test # Adds the test command
       # Adds Chromatic as a step in the workflow
       - uses: chromaui/action@v1
         # Options required for Chromatic's GitHub Action
