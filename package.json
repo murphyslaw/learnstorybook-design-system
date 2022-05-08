@@ -1,6 +1,9 @@
 {
   "name": "@murphyslaw/learnstorybook-design-system",
-  "author": "Falk Köppe <falk.koeppe@gmail.com>",
+  "author": {
+    "name": "Falk Köppe",
+    "email": "falk.koeppe@gmail.com"
+  },
   "description": "Storybook design systems tutorial",
   "version": "0.1.6",
   "license": "MIT",
@@ -8,21 +11,16 @@
   "repository": "git@github.com:murphyslaw/learnstorybook-design-system.git",
   "private": false,
   "files": [
-    "dist/*.js",
-    "dist/**/*.js"
+    "dist"
   ],
   "dependencies": {
+    "polished": "^4.1.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^13.2.0",
     "@testing-library/user-event": "^14.1.1",
-    "polished": "^4.1.1",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
-    "react-scripts": "5.0.1",
-    "styled-components": "^5.2.1",
-    "web-vitals": "^2.1.4"
-  },
-  "devDependencies": {
     "@babel/cli": "^7.17.10",
     "@storybook/addon-a11y": "^6.4.22",
     "@storybook/addon-actions": "^6.4.22",
@@ -38,13 +36,18 @@
     "auto": "^10.36.5",
     "chromatic": "^6.5.4",
     "cross-env": "^7.0.3",
-    "prettier": "^2.6.2"
+    "prettier": "^2.6.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-scripts": "5.0.1"
+  },
+  "peerDependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "cross-env BABEL_ENV=production babel src --out-dir=dist",
+    "build": "cross-env BABEL_ENV=production babel src --out-dir dist --ignore \"**/*.test.js\" --ignore \"**/*.stories.js\"",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build-storybook-docs": "build-storybook --docs",
@@ -64,28 +67,6 @@
           "import/no-anonymous-default-export": "off"
         }
       }
-    ]
-  },
-  "babel": {
-    "presets": [
-      [
-        "react-app",
-        {
-          "absoluteRuntime": false
-        }
-      ]
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
   }
 }

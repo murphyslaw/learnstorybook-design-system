@@ -16,6 +16,7 @@ jobs:
           fetch-depth: 0
       - run: yarn install --frozen-lockfile
       - run: yarn test # Adds the test command
+      - run: yarn build-storybook
 
       # Adds Chromatic as a step in the workflow
       - uses: chromaui/action@v1
@@ -25,6 +26,7 @@ jobs:
           onlyChanged: true
           traceChanged: true
           diagnostics: true
+          storybookBuildDir: storybook-static
           # Chromatic projectToken, see https.//storybook.js.org/tutorials/design-systems-for-developers/react/en/review/ to obtain it
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
