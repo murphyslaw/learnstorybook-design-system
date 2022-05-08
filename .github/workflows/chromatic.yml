@@ -11,11 +11,12 @@ jobs:
     runs-on: ubuntu-latest
     # The list of steps that the action will go through
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           fetch-depth: 0
       - run: yarn install --frozen-lockfile
       - run: yarn test # Adds the test command
+
       # Adds Chromatic as a step in the workflow
       - uses: chromaui/action@v1
         # Options required for Chromatic's GitHub Action
@@ -27,6 +28,7 @@ jobs:
           # Chromatic projectToken, see https.//storybook.js.org/tutorials/design-systems-for-developers/react/en/review/ to obtain it
           projectToken: ${{ secrets.CHROMATIC_PROJECT_TOKEN }}
           token: ${{ secrets.GITHUB_TOKEN }}
+
       - uses: actions/upload-artifact@v2
         with:
           path: |
