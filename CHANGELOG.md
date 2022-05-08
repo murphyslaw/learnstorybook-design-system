@@ -1,3 +1,16 @@
+# v0.1.7 (Sun May 08 2022)
+
+#### ⚠️ Pushed to `main`
+
+- Bugfix: Enable Babel preset and commit empty `static` directory ([@murphyslaw](https://github.com/murphyslaw))
+- Slim down repository ([@murphyslaw](https://github.com/murphyslaw))
+
+#### Authors: 1
+
+- Falk Köppe ([@murphyslaw](https://github.com/murphyslaw))
+
+---
+
 # v0.1.6 (Sun May 08 2022)
 
 #### ⚠️ Pushed to `main`
