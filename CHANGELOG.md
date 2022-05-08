@@ -1,3 +1,15 @@
+# v0.1.6 (Sun May 08 2022)
+
+#### ⚠️ Pushed to `main`
+
+- Specify what files to include in the NPM package ([@murphyslaw](https://github.com/murphyslaw))
+
+#### Authors: 1
+
+- Falk Köppe ([@murphyslaw](https://github.com/murphyslaw))
+
+---
+
 # v0.1.5 (Sun May 08 2022)
 
 #### ⚠️ Pushed to `main`
