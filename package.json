@@ -5,7 +5,7 @@
     "email": "falk.koeppe@gmail.com"
   },
   "description": "Storybook design systems tutorial",
-  "version": "0.1.7",
+  "version": "0.2.0",
   "license": "MIT",
   "main": "dist/index.js",
   "repository": "git@github.com:murphyslaw/learnstorybook-design-system.git",
