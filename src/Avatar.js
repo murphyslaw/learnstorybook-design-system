@@ -13,7 +13,7 @@ export const sizes = {
 };
 
 const Image = styled.div`
-  background: ${(props) => (!props.loading ? "transparent" : color.light)};
+  background: ${(props) => (!props.$loading ? "transparent" : color.light)};
   border-radius: 50%;
   display: inline-block;
   vertical-align: top;
@@ -51,7 +51,7 @@ const Image = styled.div`
   ${(props) =>
     !props.src &&
     css`
-      background: ${!props.loading && "#37D5D3"};
+      background: ${!props.$loading && "#37D5D3"};
     `}
 
   img {
@@ -121,7 +121,7 @@ export function Avatar({ loading, username, src, size, ...props }) {
   }
 
   return (
-    <Image size={size} loading={loading} src={src} {...a11yProps} {...props}>
+    <Image size={size} $loading={loading} src={src} {...a11yProps} {...props}>
       {avatarFigure}
     </Image>
   );
