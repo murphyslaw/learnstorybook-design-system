@@ -1,3 +1,19 @@
+# v0.2.0 (Mon May 09 2022)
+
+#### 🚀 Enhancement
+
+- Create avatar list component [#2](https://github.com/murphyslaw/learnstorybook-design-system/pull/2) ([@murphyslaw](https://github.com/murphyslaw))
+
+#### ⚠️ Pushed to `main`
+
+- Use @babel/preset-react to support 'jsx' syntax ([@murphyslaw](https://github.com/murphyslaw))
+
+#### Authors: 1
+
+- Falk Köppe ([@murphyslaw](https://github.com/murphyslaw))
+
+---
+
 # v0.1.7 (Sun May 08 2022)
 
 #### ⚠️ Pushed to `main`
